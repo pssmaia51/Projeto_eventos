@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tem na Festa - Planos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+
+    header.top-header {
+      background-color: #1f1f2e;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo-slogan {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    .slogan {
+      font-size: 1.2rem;
+      color: white;
+    }
+
+    .user-links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #f2921b;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    td:first-child, th:first-child {
+      text-align: left;
+      font-weight: bold;
+    }
+
+    .check {
+      color: green;
+      font-weight: bold;
+    }
+
+    .cross {
+      color: red;
+      font-weight: bold;
+    }
+
+    form.radio-select {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .radio-select label {
+      margin: 0 15px;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    .radio-select input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    /* Rodapé elegante */
+    .footer-elegante {
+    background-color: #1f1f2e; /* Tom sóbrio elegante */
+    color: #f0f0f0;
+    padding: 40px 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    gap: 30px;
+}
+
+.footer-coluna {
+    flex: 1 1 200px;
+    min-width: 200px;
+}
+
+.footer-coluna h3 {
+    color: #f2921b;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.footer-coluna p {
+    margin: 4px 0;
+    font-size: 0.95rem;
+}
+
+.footer-coluna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-coluna ul li {
+    margin-bottom: 6px;
+}
+
+.footer-coluna ul li a {
+    text-decoration: none;
+    color: #ddd;
+    transition: color 0.3s;
+}
+
+.footer-coluna ul li a:hover {
+    color: #f2921b;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+.botao-direita {
+  display: flex;  
+  justify-content: flex-end;  
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #34495e;
+}  
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="top-header">
+    <div class="logo-slogan">
+      <img src="../Imagens/Logo.png" alt="Logo da empresa" class="logo">
+      <span class="slogan">Seu evento no tempo certo.</span>
+    </div>
+    <nav class="user-links">
+       <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <h1>Escolha seu Plano</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Planos</th>
+          <th>GRÁTIS</th>
+          <th>BÁSICO</th>
+          <th>TOP</th>
+          <th>PREMIUM</th>
+          <th>SUPER PREMIUM</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Orçamento PRÉ-PAGO</td><td class="check">✓</td><td class="check">✓</td><td class="cross">✗</td><td class="check">✓</td><td class="cross">✗</td></tr>
+        <tr><td>Galeria de Vídeos</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Galerias de Fotos</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Quem Somos + Destaque</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Receba por WHATSAPP</td><td class="cross">✗</td><td class="cross">✗</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Eventos & Cursos com fotos</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Serviços com fotos</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Organizadores ILIMITADOS</td><td class="cross">✗</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Redes sociais + Google Maps</td><td class="cross">✗</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>Promoção na Página Inicial</td><td class="cross">✗</td><td class="cross">✗</td><td class="cross">✗</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>ÁREA MAIS (2 cidades)</td><td class="cross">✗</td><td class="cross">✗</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>DESTAQUE (melhores posições)</td><td class="cross">✗</td><td class="cross">✗</td><td class="check">✓</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>ÁREA MAIS (4 cidades)</td><td class="cross">✗</td><td class="cross">✗</td><td class="cross">✗</td><td class="check">✓</td><td class="check">✓</td></tr>
+        <tr><td>VALOR TOTAL (12 meses)</td><td>R$ 0,00</td><td>R$ 499,90</td><td>R$ 699,90</td><td>R$ 1.199,90</td><td>R$ 1.499,90</td></tr>
+      </tbody>
+    </table>
+
+    <!-- Formulário de seleção -->
+    <form class="radio-select">
+      <fieldset>
+        <legend><strong>Selecione o seu plano:</strong></legend>
+        <label><input type="radio" name="plano" value="gratis" /> Grátis</label>
+        <label><input type="radio" name="plano" value="basico" /> Básico</label>
+        <label><input type="radio" name="plano" value="top" /> Top</label>
+        <label><input type="radio" name="plano" value="premium" /> Premium</label>
+        <label><input type="radio" name="plano" value="super" /> Super Premium</label>
+      </fieldset>
+    </form>
+
+    <!-- Botão alinhado à direita -->
+    <div class="botao-direita">
+    <a href="cadastro.html" class="btn">Prosseguir</a>
+</div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer-elegante">
+    <div class="footer-conteudo">
+      <div class="footer-coluna">
+        <h3>FINANCEIRO</h3>
+        <p>📞 (91) 90000-0000</p>
+        <p>📧 financeiro@garcia.com</p>
+      </div>
+
+      <div class="footer-coluna">
+        <h3>COMERCIAL</h3>
+        <p>📞 (91) 90000-0000</p>
+        <p>📧 comercial@garcia.com</p>
+      </div>
+
+      <div class="footer-coluna">
+        <h3>SUPORTE TÉCNICO</h3>
+        <p>📞 (91) 90000-0000</p>
+        <p>📧 suporte@garcia.com</p>
+      </div>
+
+      <div class="footer-coluna">
+        <h3>INSTITUCIONAL</h3>
+        <ul>
+          <li><a href="#">Quem Somos</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Depoimentos</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-copy">
+      copyright&copy;2025 Maia's Informatica Projetos e Consultoria em TI. Todos os direitos reservados.
+    </div>
+  </footer>
+</body>
+</html>

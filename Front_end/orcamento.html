@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Orçamento - Zeca Eventos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Zeca Eventos</h1>
+  </header>
+
+  <main>
+    <h2>Solicitar Orçamento</h2>
+    <form action="/orcamento" method="post">
+      <label for="tipoEvento">Tipo de Evento:</label>
+      <input type="text" id="tipoEvento" name="tipoEvento" value="(vindo de eventos.html)" required />
+
+      <label for="data">Data do evento:</label>
+      <input type="date" id="data" name="data" required />
+
+      <label for="convidados">Número de convidados:</label>
+      <input type="number" id="convidados" name="convidados" required />
+
+      <label for="observacoes">Observações:</label>
+      <textarea id="observacoes" name="observacoes"></textarea>
+
+      <button type="submit">Solicitar Orçamento</button>
+    </form>
+  </main>
+</body>
+</html>
